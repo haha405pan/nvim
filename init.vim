@@ -20,6 +20,7 @@ source ~/.config/nvim/plug-config/vim-slime.vim
 source ~/.config/nvim/plug-config/sneak.vim
 source ~/.config/nvim/plug-config/quickscope.vim
 source ~/.config/nvim/plug-config/undotree.vim
+source ~/.config/nvim/plug-config/git.vim
 
 
 " Markdown Settings

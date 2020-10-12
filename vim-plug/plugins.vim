@@ -28,12 +28,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'honza/vim-snippets'
     " Start Screen
     Plug 'mhinz/vim-startify'
-
     " FZF
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    " Have the file system follow you around
-    " Plug 'airblade/vim-rooter'
 
     " Python REPL
     Plug 'jpalardy/vim-slime'
@@ -46,13 +43,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'dkarter/bullets.vim'
     " Zettelkasten method
     Plug 'KevinBockelandt/notoire'
-    " Plug 'vimwiki/vimwiki'
 
     " Sneak
     Plug 'justinmk/vim-sneak'
     " Qucik-scope
     Plug 'unblevable/quick-scope'
 
+    "Git
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    " Plug 'junegunn/gv.vim'
+    " Plug 'rhysd/git-messenger.vim'
 
     " Themes (one dark mode)
     Plug 'christianchiarulli/nvcode.vim'
