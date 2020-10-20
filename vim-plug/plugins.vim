@@ -25,7 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Snippets
-    Plug 'honza/vim-snippets'
+    " Plug 'honza/vim-snippets'
     " Start Screen
     Plug 'mhinz/vim-startify'
     " FZF
