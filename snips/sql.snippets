@@ -1,0 +1,42 @@
+snippet cd "create database" b
+CREATE DATABASE ${1:databse};
+${0}
+endsnippet
+
+snippet ct "create table" b
+CREATE TABLE ${1:schema.table}(
+	${0:columns}
+		);
+endsnippet
+
+snippet col "enter columns" b
+${1:colname}	${2:type}	${3:default ''}	${0:not null}
+endsnippet
+
+snippet ins "insert into" b
+INSERT INTO ${1:table}(${2:colname}) VALUES(${0:values});
+endsnippet
+
+snippet sf "select from" b
+SELECT ${1:colname} FROM ${2:table};
+${0}
+endsnippet
+
+snippet sfw "select from where" b
+SELECT ${1:colname} FROM ${2:table}
+WHERE ${3:condition};
+${0}
+endsnippet
+
+snippet sfg "select from where" b
+SELECT ${1:colname} FROM ${2:table}
+GROUPBY ${3:colname};
+${0}
+endsnippet
+
+snippet sj "select join" b
+SELECT ${1:colname} FROM ${2:table1}
+INNER JOIN ${3:table2} on ${4:condition}
+${0}
+endsnippet
+
