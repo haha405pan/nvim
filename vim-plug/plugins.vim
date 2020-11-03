@@ -44,7 +44,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'KevinBockelandt/notoire'
 
     " Sneak
-    Plug 'justinmk/vim-sneak'
+    " Plug 'justinmk/vim-sneak'
     " Qucik-scope
     Plug 'unblevable/quick-scope'
 
