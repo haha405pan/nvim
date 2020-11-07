@@ -1,4 +1,27 @@
 " ===
+" === Terminal Behaviors
+" ===
+let g:neoterm_autoscroll = 1
+autocmd TermOpen term://* startinsert
+tnoremap <C-N> <C-\><C-N>
+tnoremap <C-O> <C-\><C-N><C-O>
+let g:terminal_color_0  = '#000000'
+let g:terminal_color_1  = '#FF5555'
+let g:terminal_color_2  = '#50FA7B'
+let g:terminal_color_3  = '#F1FA8C'
+let g:terminal_color_4  = '#BD93F9'
+let g:terminal_color_5  = '#FF79C6'
+let g:terminal_color_6  = '#8BE9FD'
+let g:terminal_color_7  = '#BFBFBF'
+let g:terminal_color_8  = '#4D4D4D'
+let g:terminal_color_9  = '#FF6E67'
+let g:terminal_color_10 = '#5AF78E'
+let g:terminal_color_11 = '#F4F99D'
+let g:terminal_color_12 = '#CAA9FA'
+let g:terminal_color_13 = '#FF92D0'
+let g:terminal_color_14 = '#9AEDFE'
+
+" ===
 " === Basic Mappings
 " ===
 " Set <LEADER> as <SPACE>
@@ -7,10 +30,20 @@ noremap ; :
 
 " Save & quit
 noremap Q :q<CR>
-" noremap S :w<CR>
+noremap <C-q> :qa<CR>
+noremap S :w<CR>
+
+" Open the vimrc file anytime
+noremap <LEADER>rc :e ~/.config/nvim/init.vim<CR>
 
 " Search
 noremap <LEADER><CR> :nohlsearch<CR>
+
+" make Y to copy till the end of the line
+nnoremap Y y$
+
+" Copy to system clipboard
+vnoremap Y "+y
 
 " Indentation
 nnoremap < <<
@@ -38,14 +71,22 @@ noremap <silent> J 10j
 " Faster in-line navigation
 noremap W 5w
 noremap B 5b
+
+" Ctrl + u or e will move up/down the view port without moving the cursor
+noremap <c-k> 5<c-y>
+noremap <C-J> 5<C-e>
+
 " ===
 " === Command Mode Cursor Movement
 " ===
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
-
+cnoremap <M-b> <S-Left>
+cnoremap <M-w> <S-Right>
 
 " ===
 " === Window management
@@ -103,4 +144,23 @@ noremap tmi :+tabmove<CR>
 " ===
 " Press space twice to jump to the next '<++>' and edit it
 noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+
+" Opening a terminal window
+noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
+
+" Open a new instance of st with the cwd
+nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
+
+" Spelling Check with <space>sc
+noremap <LEADER>sc :set spell!<CR>
+
+" find and replace
+noremap \s :%s//g<left><left>
+
+" set wrap
+noremap <LEADER>sw :set wrap<CR>
+
+
+
+
 
