@@ -3,8 +3,8 @@ noremap <silent> <C-p> :Files<CR>
 "noremap <silent> <C-p> :LeaderF file<CR>
 noremap <silent> <C-f> :Rg<CR>
 noremap <silent> <C-h> :History<CR>
-"noremap <C-t> :BTags<CR>
-noremap <silent> <C-n> :Lines<CR>
+noremap <C-t> :BTags<CR>
+noremap <silent> <C-l> :Lines<CR>
 noremap <silent> <C-w> :Buffers<CR>
 noremap <leader>; :History:<CR>
 

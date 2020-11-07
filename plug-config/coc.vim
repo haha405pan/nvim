@@ -19,7 +19,7 @@ let g:coc_global_extensions = [
 	\ 'coc-translator',
 	\ 'coc-tslint-plugin',
 	\ 'coc-tsserver',
-	\ 'coc-vimlsp',
+    \ 'coc-vimlsp',
 	\ 'coc-vetur',
 	\ 'coc-yaml',
 	\ 'coc-yank']

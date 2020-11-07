@@ -18,11 +18,12 @@ let g:startify_lists = [
 
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.config/zsh/.zshrc' },
+            \ { 'z': '~/.config/.zshrc' },
             \ { 't': '~/.config/tmux/.tmux.conf' },
             \ { 'r': '~/.config/ranger/rc.conf' },
-            \ { 'a': '~/.config/alacritty/alacritty.yml' },
-            \ { 'w': '~/my_project' },
+            \ { 'g': '~/Github' },
+            \ { 's': '~/Scripts' },
+            \ { 'd': '~/Documents' },
             \ ]
 let g:startify_session_autoload = 1
 let g:startify_session_delete_buffers = 1
