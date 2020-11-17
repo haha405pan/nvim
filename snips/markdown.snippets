@@ -5,3 +5,19 @@ snippet ihd "id with header and date" b
 $0
 endsnippet
 
+snippet rm "read more" b
+<!-- more -->
+
+$0
+endsnippet
+
+
+snippet fo "fold the content" b
+{% fold ${1:display the content} %} 
+
+${2:hide the content}
+
+{% endfold %}
+
+$0
+endsnippet
