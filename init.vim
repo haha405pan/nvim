@@ -30,4 +30,4 @@ source ~/.config/nvim/plug-config/notoire.vim
 " Snippets
 source ~/.config/nvim/snips/md-snippets.vim
 
-let g:python3_host_prog ='/usr/bin/python3'
+let g:python3_host_prog ='/Users/zhihuipan/.pyenv/shims/python3'

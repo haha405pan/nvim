@@ -35,6 +35,7 @@ let g:bullets_enabled_file_types = [
 			\ 'scratch'
 			\]
 let g:bullets_outline_levels = ['num', 'abc', 'std*']
+let g:bullets_checkbox_markers = ' .oOX'
 
 " ===
 " === vim-markdown-toc
