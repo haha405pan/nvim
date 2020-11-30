@@ -47,6 +47,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'justinmk/vim-sneak'
     " Qucik-scope
     Plug 'unblevable/quick-scope'
+	" Easy-motion
+	Plug 'easymotion/vim-easymotion'
 
     "Git
     Plug 'airblade/vim-gitgutter'
