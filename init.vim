@@ -16,7 +16,7 @@ source ~/.config/nvim/plug-config/start-screen.vim
 source ~/.config/nvim/plug-config/fzf.vim
 source ~/.config/nvim/plug-config/rnvimr.vim
 source ~/.config/nvim/plug-config/vim-commentary.vim
-source ~/.config/nvim/plug-config/vim-slime.vim
+source ~/.config/nvim/plug-config/vim-repl.vim
 " source ~/.config/nvim/plug-config/sneak.vim
 source ~/.config/nvim/plug-config/easy-motion.vim
 source ~/.config/nvim/plug-config/quickscope.vim

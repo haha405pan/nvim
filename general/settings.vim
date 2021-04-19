@@ -57,7 +57,6 @@ au! BufWritePost $MYVIMRC source %
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 " autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-
 " ===
 " === Markdown Settings
 " ===

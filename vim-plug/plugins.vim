@@ -32,7 +32,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
 
     " Python REPL
-    Plug 'jpalardy/vim-slime'
+    " Plug 'jpalardy/vim-slime'
+    Plug 'karoliskoncevicius/vim-sendtowindow'
 
     " Markdown 
     " Markdown Preview
