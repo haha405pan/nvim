@@ -7,6 +7,7 @@ let g:coc_global_extensions = [
 	\ 'coc-gitignore',
 	\ 'coc-html',
 	\ 'coc-json',
+	\ 'coc-java',
 	\ 'coc-lists',
 	\ 'coc-prettier',
 	\ 'coc-python',
@@ -161,7 +162,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Coc-Snippets
 " Use <C-l> for trigger snippet expand.
-imap <C-l> <Plug>(coc-snippets-expand)
+imap <C-k> <Plug>(coc-snippets-expand)
 
 " Use <C-j> for select text for visual placeholder of snippet.
 vmap <C-j> <Plug>(coc-snippets-select)
@@ -170,7 +171,7 @@ vmap <C-j> <Plug>(coc-snippets-select)
 let g:coc_snippet_next = '<c-j>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<c-k>'
+let g:coc_snippet_prev = '<c-h>'
 
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
@@ -178,3 +179,8 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 
 " Explorer
 nmap tt :CocCommand explorer<CR>b
+
+" coctodolist 
+nnoremap <leader>tn :CocCommand todolist.create<CR>
+nnoremap <leader>tl :CocList todolist<CR>
+nnoremap <leader>tu :CocCommand todolist.download<CR>:CocCommand todolist.upload<CR>

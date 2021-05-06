@@ -129,14 +129,14 @@ noremap <LEADER>q <C-w>j:q<CR>
 " ===
 " === Tab management
 " ===
-" Create a new tab with tu
+" Create a new tab with tj
 noremap tj :tabe<CR>
 " Move around tabs with th and tl
 noremap th :-tabnext<CR>
 noremap tl :+tabnext<CR>
-" Move the tabs with tmn and tmi
-noremap tmn :-tabmove<CR>
-noremap tmi :+tabmove<CR>
+" Move the tabs with tmh and tml
+noremap tmh :-tabmove<CR>
+noremap tml :+tabmove<CR>
 
 
 " ===

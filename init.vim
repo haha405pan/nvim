@@ -22,6 +22,7 @@ source ~/.config/nvim/plug-config/easy-motion.vim
 source ~/.config/nvim/plug-config/quickscope.vim
 source ~/.config/nvim/plug-config/undotree.vim
 source ~/.config/nvim/plug-config/git.vim
+source ~/.config/nvim/plug-config/xtabline.vim
 
 
 " Markdown Settings

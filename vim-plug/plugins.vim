@@ -15,6 +15,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Airline  
     Plug 'vim-airline/vim-airline'
+    
+    " xtabline
+    Plug 'mg979/vim-xtabline'
     " Ranger
     Plug 'kevinhwang91/rnvimr'
     " Pretty Dress

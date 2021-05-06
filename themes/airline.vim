@@ -1,11 +1,11 @@
 " enable tabline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ''
-let g:airline#extensions#tabline#left_alt_sep = ''
-let g:airline#extensions#tabline#right_sep = ''
-let g:airline#extensions#tabline#right_alt_sep = ''
-let airline#extensions#tabline#show_splits = 0
-let airline#extensions#tabline#tabs_label = ''
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#left_sep = ''
+" let g:airline#extensions#tabline#left_alt_sep = ''
+" let g:airline#extensions#tabline#right_sep = ''
+" let g:airline#extensions#tabline#right_alt_sep = ''
+" let airline#extensions#tabline#show_splits = 0
+" let airline#extensions#tabline#tabs_label = ''
 
 " Disable tabline close button
 " let g:airline#extensions#tabline#show_close_button = 0
@@ -20,10 +20,10 @@ let airline#extensions#tabline#tabs_label = ''
 " let g:airline#extensions#coc#enabled = 1
 
 " Just show the file name
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
 
 " enable powerline fonts
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
@@ -38,11 +38,11 @@ let g:airline_section_c = airline#section#create([''])
 set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
-set noshowmode
+" set noshowmode
 
 " Sections
 " let g:airline_section_c = ''
-let g:airline_section_a = " NVCode"
+" let g:airline_section_a = " NVCode"
 " let g:airline_section_a = ""
-let g:airline_section_y = ''
-let g:webdevicons_enable_airline_tabline = 1
+" let g:airline_section_y = ''
+" let g:webdevicons_enable_airline_tabline = 1
